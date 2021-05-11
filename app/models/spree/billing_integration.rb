@@ -13,6 +13,7 @@ module Spree
     end
 
     def options
+      puts "to aqui"
       options_hash = {}
       preferences.each { |key, value| options_hash[key.to_sym] = value }
       options_hash
