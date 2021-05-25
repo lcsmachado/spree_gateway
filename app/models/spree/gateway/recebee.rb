@@ -7,7 +7,7 @@ module Spree
     end
 
     def auto_capture?
-      true
+      self.name.downcase != 'boleto' ? true : false
     end
 
     def cancel(response)
