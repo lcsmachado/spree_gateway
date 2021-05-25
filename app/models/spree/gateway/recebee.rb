@@ -7,6 +7,7 @@ module Spree
     end
 
     def auto_capture?
+      byebug
       self.name.downcase != 'boleto' ? true : false
     end
 
